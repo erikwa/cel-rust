@@ -7,6 +7,28 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.15.1](https://github.com/erikwa/cel-rust/compare/v0.15.0...v0.15.1) - 2026-10-19
+
+### Added
+
+- *(extensions)* `lists.range` max size configurable
+- *(env)* libraries added once, by name
+- *(extensions)* add the bindings extension (cel.bind)
+
+### Fixed
+
+- *(maps)* `in` and optional access follow cel-go on unusable keys
+- *(env)* restore UnwindSafe on FunctionDecl and OverloadDecl
+- *(lists)* Fake `Lister` trait with `Kind`
+
+### Other
+
+- Align struct creation AST ID and location with ANTLR
+- Fix Pratt parser and lexer discrepancies with ANTLR
+- [Pratt parser] Port changes improving compatibility with ANTLR parser from cel/c++
+- Fix parsing of unescaped newlines in string literals
+- Merge pull request #408 from alexsnaps/env-idempotent
+
 ## [0.15.0](https://github.com/cel-rust/cel-rust/compare/v0.14.5...v0.15.0) - 2026-10-06
 
 ### Added
